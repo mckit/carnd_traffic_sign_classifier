@@ -95,17 +95,22 @@ My final model results were:
 * validation set accuracy of 0.934
 * test set accuracy of 0.921
 
-I followed the example we learned during the neural network lessons and used the LeNet architecture. This has been my first exposure to neural networks, so I wanted to stick with what was presented in the lesson. After some reading, I did add a dropout to the fourth layer to get a better result. As mentioned above, I experimented with the hyperparameters to try to get a more accurate and efficient model. 
+To arrive at these results I began by preprocessing my data. The preprocessing consisted of shuffling the training set and performing a normalization by calculating the zero mean and equal variance of the data. 
+
+I followed the example we learned during the neural network lessons and used the LeNet architecture. This has been my first exposure to neural networks, so I wanted to stick with what was presented in the lesson. LeNet uses five layers. Layer one is a convolutional layer with max pooling. Layer two is a convolutional layer with max pooling and flattening. Layer three is a fully connected layer. Layer four is also a fully connected layer.  After some reading, I added a dropout to the fourth layer to get a better result. Finally layer five is another fully connected layer. As mentioned above, I experimented with the hyperparameters to try to get a more accurate and efficient model. 
+
+
 
 ### Test a Model on New Images
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-[image3]
-[image4]
-[image5]
-[image6]
-[image7]
+![image3](./german_traffic_signs/image_1.jpg "Traffic Sign 1")
+![image4](./german_traffic_signs/image_2.jpg "Traffic Sign 2")
+![image5](./german_traffic_signs/image_3.jpg "Traffic Sign 3")
+![image6](./german_traffic_signs/image_4.jpg "Traffic Sign 4")
+![image7](./german_traffic_signs/image_5.jpg "Traffic Sign 5")
+
 
 I included five images of German traffic signs from the web in a folder called german_traffic_signs. I think all of the images should be reasonably easy to classify. Image one is at a slight angle, but is otherwise clear. Perhaps a perspective transform could help with more extreme examples like this. Image two appears to be almost directly head on. Image three is also clear and relatively straight on. Image four is a sign on the back of a stop sign, so perhaps the outline of the other sign could interfere with the prediction. Image five is a head on view of a speed limit sign that should not present many issues. 
 
