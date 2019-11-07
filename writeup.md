@@ -19,11 +19,11 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
+[image3]: ./german_traffic_signs/image_1.jpg "Traffic Sign 1"
+[image4]: ./german_traffic_signs/image_2.jpg "Traffic Sign 2"
+[image5]: ./german_traffic_signs/image_3.jpg "Traffic Sign 3"
+[image6]: ./german_traffic_signs/image_4.jpg "Traffic Sign 4"
+[image7]: ./german_traffic_signs/image_5.jpg "Traffic Sign 5"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
 ## Rubric Points
@@ -100,6 +100,12 @@ I followed the example we learned during the neural network lessons and used the
 ### Test a Model on New Images
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+
+[image3]
+[image4]
+[image5]
+[image6]
+[image7]
 
 I included five images of German traffic signs from the web in a folder called german_traffic_signs. I think all of the images should be reasonably easy to classify. Image one is at a slight angle, but is otherwise clear. Perhaps a perspective transform could help with more extreme examples like this. Image two appears to be almost directly head on. Image three is also clear and relatively straight on. Image four is a sign on the back of a stop sign, so perhaps the outline of the other sign could interfere with the prediction. Image five is a head on view of a speed limit sign that should not present many issues. 
 
